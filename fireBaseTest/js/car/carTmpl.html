@@ -1,0 +1,12 @@
+<h1> Car Page</h1>
+
+<p>Make:  {{car.make}}
+  Model: {{car.model}}
+  Year: {{car.year}}
+  Mileage: {{car.mileage}}
+  Price: {{car.price}}
+
+<hr/>
+<button ng-click="addComments(comment)">Add Comment</button>
+<input type="text" ng-model="comment" placeholder="Comment">
+<div ng-repeat="comment in comments"> {{comment.$value}}
